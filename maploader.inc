@@ -9,7 +9,7 @@
 * ================
 *
 * ================
-* Special thanks to: Southclaw (the creater of Map Parser filterscript), Incognito (streamer plugin), Y_Less (sscanf plugin)
+* Special thanks to: Southclaw (thanks for his Map Parser filterscript), Incognito (streamer plugin), Y_Less (sscanf plugin)
 * ================
 *
 * ================
