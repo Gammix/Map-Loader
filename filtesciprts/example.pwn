@@ -34,6 +34,5 @@ LoadMapFromFile(const mapname[])
 
 public OnFilterScriptInit
 {
-    LoadMapFromFile("map1.ini");
-    LoadMapFromFile("map2.ini");
+    LoadMapFromFile("map.ini");
 }
