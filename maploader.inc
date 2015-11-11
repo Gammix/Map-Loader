@@ -166,7 +166,6 @@ stock Map_Load(const mapname[])
 			}
 		}
 
-
 		if (! strcmp(funcname, "SetDynamicObjectMaterialText", true))
 		{
 			if (! sscanf(funcargs, "p<,>{s[32]} d p<\">{s[2]}s[32]p<,>{s[2]} s[32] p<\">{s[2]}s[32]p<,>{s[2]} ddxxd", idx, text, resname, font, fontsize, bold, fontcol, bgcol, align))
@@ -276,7 +275,7 @@ stock Map_Load(const mapname[])
 	}
 
 	fclose(file);
-	
+
 	strcat(mapNames[index], mapname);
 
 	return mapLoadedCount[index];
@@ -292,12 +291,7 @@ stock bool:Map_Unload(const mapname[])
 	    if (mapNames[i][0] && ! strcmp(mapNames[i], mapname))
 		{
 		    index = i;
-
-		    if (! mapLoaded[i])
-		    {
-		    	return false;
-			}
-
+		    
 		    break;
 		}
 	}
@@ -315,7 +309,6 @@ stock bool:Map_Unload(const mapname[])
  	}
 
 	mapNames[index][0] = EOS;
-	mapLoaded[index] = false;
  	mapLoadedCount[index] = 0;
 
  	return true;
